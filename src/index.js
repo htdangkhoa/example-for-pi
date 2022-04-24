@@ -1,6 +1,6 @@
 const pureHttp = require('pure-http');
 
-const PORT = process.env.PORT || 9090;
+const PORT = process.env.PORT || 3000;
 
 const app = pureHttp();
 
