@@ -1,0 +1,14 @@
+{
+  "name": "example-for-pi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/htdangkhoa/example-for-pi.git",
+  "author": "Khoa Huynh Tran Dang <khoa.htd@amanotes.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "pure-http": "^3.3.1"
+  }
+}
