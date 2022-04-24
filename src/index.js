@@ -1,8 +1,8 @@
-const pureHttp = require('pure-http');
+const express = require('express');
 
 const PORT = process.env.PORT || 3000;
 
-const app = pureHttp();
+const app = express();
 
 app.all('/', (req, res) => res.send('Hello World!'));
 
