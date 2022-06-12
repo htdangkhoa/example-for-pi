@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: node-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: node-app
@@ -13,7 +13,8 @@ spec:
         app: node-app
     spec: # pod spec
       containers:
-      - name: node-server
-        image: htdangkhoa/node-app
+      - name: node-app
+        image: htdangkhoa/node-app:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 3000
